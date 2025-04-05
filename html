@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boys hostel Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e4e7bc;
+            margin: ;
+            padding: 8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: rgb(236, 190, 146);
+            padding: 20px;
+            border-radius: 6cm;
+            box-shadow: 0 0 10px rgba(211, 208, 14, 0.1);
+            width: 50%;
+        }
+        h2 {
+            text-align: center;
+            color: #52c510;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin:  0;
+            border: 1px solid #2e1414;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: rgb(251, 210, 310);
+            padding: 3px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #2d8b4d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Girls Hostel Registration Form</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Permanent Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <label for="guardian">Guardian's Name:</label>
+            <input type="text" id="guardian" name="guardian" required>
+
+            <label for="guardian_phone">Guardian's Phone Number:</label>
+            <input type="tel" id="guardian_phone" name="guardian_phone" required>
+
+            <label for="room_type">Preferred Room Type:</label>
+            <select id="room_type" name="room_type" required>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="triple">Triple</option>
+            </select>
+
+            <label for="duration">Duration of Stay (months):</label>
+            <input type="number" id="duration" name="duration" min="1" required>
+
+            <label for="medical">Medical Conditions (if any):</label>
+            <textarea id="medical" name="medical" rows="2"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
